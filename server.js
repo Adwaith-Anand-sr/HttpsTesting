@@ -15,7 +15,7 @@ const server = https.createServer({
   cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem')),
 }, app);
 
-const PORT = process.env.PORT || 443;
+const PORT = 443;
 
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
